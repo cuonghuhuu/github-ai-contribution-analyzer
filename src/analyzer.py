@@ -23,10 +23,10 @@ def is_bot_account(author_name, commit_data):
 
 def calculate_contribution_score(stats):
     score = (
-        stats["commits"] * 1
-        + stats["additions"] * 0.02
-        + stats["deletions"] * 0.01
-        + stats["files_changed"] * 0.5
+        stats["commits"] * 2
+        + (stats["additions"] / 100) * 0.5
+        + (stats["deletions"] / 100) * 0.2
+        + stats["files_changed"] * 1
     )
     return round(score, 2)
 
@@ -36,7 +36,7 @@ def analyze_contributors(owner, repo, commits, commit_limit=10):
 
     for commit_data in commits[:commit_limit]:
         commit_author = commit_data.get("commit", {}).get("author") or {}
-        author_name = commit_author.get("name", "Unknown")
+        author_name = commit_author.get("name", "Không rõ")
         sha = commit_data.get("sha")
 
         if is_bot_account(author_name, commit_data):

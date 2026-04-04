@@ -4,12 +4,14 @@ def generate_summary(author, stats):
     deletions = stats["deletions"]
     files = stats["files_changed"]
 
-    summary = f"{author} has made {commits} commits with {additions} additions and {deletions} deletions across {files} files."
+    summary = (
+        f"{author} đã thực hiện {commits} commit, tác động tới {files} file, "
+        f"với {additions} dòng thêm và {deletions} dòng xóa."
+    )
 
     if commits > 5:
-        summary += " This contributor appears to be highly active."
+        summary += " Contributor này có mức độ hoạt động nổi bật và đóng góp khá đều."
     else:
-        summary += " This contributor has limited activity."
-
+        summary += " Contributor này hiện có mức độ hoạt động còn khá hạn chế."
 
     return summary

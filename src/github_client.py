@@ -29,12 +29,12 @@ def get_commits(owner, repo):
     try:
         response = requests.get(url, headers=build_headers(), timeout=30)
     except requests.RequestException as error:
-        print("Error getting commits:", error)
+        print(f"Không thể lấy dữ liệu commit từ GitHub API: {error}")
         return []
 
     if response.status_code != 200:
-        print("Error getting commits:", response.status_code)
-        print(response.text)
+        print(f"Không thể lấy dữ liệu commit. Mã lỗi: {response.status_code}")
+        print(f"Chi tiết từ GitHub API: {response.text}")
         return []
 
     return response.json()
@@ -46,11 +46,11 @@ def get_commit_detail(owner, repo, sha):
     try:
         response = requests.get(url, headers=build_headers(), timeout=30)
     except requests.RequestException as error:
-        print(f"Error getting commit detail for {sha}: {error}")
+        print(f"Không thể lấy chi tiết commit {sha}: {error}")
         return None
 
     if response.status_code != 200:
-        print(f"Error getting commit detail for {sha}: {response.status_code}")
+        print(f"Không thể lấy chi tiết commit {sha}. Mã lỗi: {response.status_code}")
         return None
 
     return response.json()

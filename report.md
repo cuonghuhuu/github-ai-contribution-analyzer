@@ -1,25 +1,25 @@
-# GitHub Contribution Report
+# Báo cáo đóng góp GitHub
 
-## Repository
-psf/requests
+## Repo
+cuonghuhuu/team-project-test
 
-## Contributor Ranking
+## Xếp hạng contributor
 
-### 1. Nate Prewitt
-- Commits: 8
-- Additions: 119
-- Deletions: 33
-- Files Changed: 17
-- Contribution Score: 19.21
+### 1. Le Van Cuong
+- Số commit: 1
+- Số dòng thêm: 46
+- Số dòng xóa: 0
+- Số file đã thay đổi: 9
+- Điểm đóng góp: 11.23
 
-- AI Summary: Nate Prewitt has made 8 commits with 119 additions and 33 deletions across 17 files. This contributor appears to be highly active.
+- Nhận xét AI: Le Van Cuong đã thực hiện 1 commit, tác động tới 9 file, với 46 dòng thêm và 0 dòng xóa. Contributor này hiện có mức độ hoạt động còn khá hạn chế.
 
-### 2. Frank Dana
-- Commits: 1
-- Additions: 1
-- Deletions: 1
-- Files Changed: 1
-- Contribution Score: 1.53
+### 2. Ngọc Linh
+- Số commit: 1
+- Số dòng thêm: 2
+- Số dòng xóa: 0
+- Số file đã thay đổi: 1
+- Điểm đóng góp: 3.01
 
-- AI Summary: Frank Dana has made 1 commits with 1 additions and 1 deletions across 1 files. This contributor has limited activity.
+- Nhận xét AI: Ngọc Linh đã thực hiện 1 commit, tác động tới 1 file, với 2 dòng thêm và 0 dòng xóa. Contributor này hiện có mức độ hoạt động còn khá hạn chế.
 
